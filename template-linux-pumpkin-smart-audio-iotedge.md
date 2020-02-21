@@ -62,13 +62,13 @@ You should have the following items ready before beginning the process:
 
 2) Wifi: To setup the device to work with Wifi you need the following pre-requsisites: 
    
-    a. Wifi SSID
-    b. Wifi Password
+       a. Wifi SSID
+       b. Wifi Password
 
 Once you have these ready, run the following commands on the device: 
 
-   ` 1. wpa_passphrase SSID PASSWORD >> /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
-     2. wpa_supplicant -i wlan0 -B -c /etc/wpa_supplicant/wpa_supplicant-wlan0.conf `
+    1. wpa_passphrase SSID PASSWORD >> /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
+    2. wpa_supplicant -i wlan0 -B -c /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 
 You should have network connectivity after this step. Confirm that you are able to access the internet before proceeding. 
 
@@ -79,11 +79,11 @@ You should have network connectivity after this step. Confirm that you are able 
 
 -  On the device, add the connection string to the following file: 
 
--  `/etc/iotedge/config.yaml`
+         /etc/iotedge/config.yaml
 
 -  After you have added the file to the device you should be able to start the IoT Edge Daemon with the following command: 
 
--  `$ iotedged -c /etc/iotedge/config.yaml`
+         $ iotedged -c /etc/iotedge/config.yaml`
 
 Note: Make sure you specify the configuration file to use otherwise the IoT Edge Daemon will fail to start.    
 

@@ -83,7 +83,7 @@ You should have network connectivity after this step. Confirm that you are able 
 
 -  After you have added the file to the device you should be able to start the IoT Edge Daemon with the following command: 
 
-   $ iotedged -c /etc/iotedge/config.yaml
+   $ systemctl status iotedge
 
 Note: Make sure you specify the configuration file to use otherwise the IoT Edge Daemon will fail to start.    
 
